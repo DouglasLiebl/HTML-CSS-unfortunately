@@ -2,13 +2,37 @@
 <html Lang="pt-BR">
     <head> 
         <meta charset="UTF-8"> <!-- A tag meta serve para definir metadados sobre o documento, como o conjunto de caracteres que será utilizado, o autor, etc. -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- serve para tudo se ajustar a tela do navegador que está usando. -->
+
         <title>Meu HTMl</title> <!-- A tag title serve para colocar o título da página, que é exibido na aba do navegador. -->
 
+        <style> 
+            #cabecalho1 {
+                color:white;
+            }
+
+            #cabecalho2 {
+                color:white;
+                background: violet;
+            }
+
+            .fundo-vermelho {
+                background: black;
+            }
+
+        </style> <!-- A tag style serve para colocar estilos na página. -->
     </head> <!-- A tag head serve para colocar informações sobre o documento, como o título da página, links para outros documentos, scripts, etc.-->
 
     <body> <!-- A tag body serve para colocar o conteúdo da página. -->
-        <h1>Meu primeiro HTML</h1> <!-- A tag h1 serve para colocar um título na página. -->
-        <p>Olá mundo!</p> <!-- A tag p serve para colocar um parágrafo na página. -->
+        <h1 id="cabecalho1" class="fundo-vermelho">
+            teste
+        </h1>
+
+        <h2 id="cabecalho2" class="fundo-vermelho">
+            Meu primeiro HTML
+        </h2> <!-- A tag h1 serve para colocar um título na página. -->
+        <p></p> <!-- A tag p serve para colocar um parágrafo na página. -->
     </body>
 </html>
 
