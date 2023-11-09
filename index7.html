@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Index6</title>
+
+        <style>
+
+            body {
+                font-family: sans-serif;
+            }
+
+            table {
+                border-collapse: collapse;
+                width: 800px;
+            }
+
+            table td, table th {
+                border: 1px solid #ccc;
+                padding: 5px;
+                text-align: left;
+            }
+
+            table caption {
+                caption-side: bottom;
+                text-align: left;
+                font-style: italic;
+                font-size: 14px;
+                margin: 5px;
+            }
+
+            tfoot td, table th{
+                background: #ddd;
+            }
+
+            tfoot td {
+                font-style: italic;    
+            }
+
+            .responsive-table {
+                max-width: 100%;   
+                overflow-x: auto;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="responsive-table">
+        <table>
+            <caption>Uma descriçao para a tabela</caption>
+            <thead>
+                <tr>
+                    <th>Titulo1</th>
+                    <th>Titulo2</th>
+                    <th>Titulo3</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr> 
+                    <td>Corpo1</td>
+                    <td>Corpo2</td>
+                    <td>Corpo3</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Corpo1</td>
+                    <td>Corpo3</td>
+                </tr>
+                <tr>
+                    <td>Corpo1</td>
+                    <td>Corpo2</td>
+                    <td>Corpo3</td>
+                </tr>
+
+            <tfoot>
+                <tr>
+                    <td>Corpo1</td>
+                    <td>Corpo2</td>
+                    <td>Corpo3</td>
+                </tr>
+            </tfoot>
+        </table>
+        </div>
+    </body>
+</html>
