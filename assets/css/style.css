@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+} /* O seletor "*" seleciona todos os elementos da página.*/
+
+p {
+    color: purple;
+}
+
+body div section p,
+body div section h1 {
+    color: red;
+}
+
+/* Seletores podem ser aplicados diretamente as tags.
+No segundo exemplo, é especificado o nivel hierárquico do html:
+<body>
+    <div>
+        <section>
+            <h1>
+            <p>
+Enquanto no primeiro a tag <p> é selecionada "globalmente".*/
+
+.heading {
+    color: green;
+} /* Uma classe é selecionada usando um ponto antes do nome da classe.*/
+
+.heading p {
+    font-style: italic;
+    color: yellow
+}
+
+/* Também podemos pegar tags dentro de uma classe ou uma classe dentro de outra classe.*/
+
+div {
+    color: initial;
+    margin-left: 20px;
+}
+
+.pai>.filha {
+    color: red;
+}
+
+/* Acima foi utilizado o sinal ">" entre duas classes, ele serve para selecionar apenas as classes diretamente abaixo da classe pai. Por exemplo, existe uma classe .pai e duas classes .filha cada uma tendo mais uma classe .filha dentro de si. Sem o sinal todas as qua*/
