@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-} /* O seletor "*" seleciona todos os elementos da página.*/
+} /* O seletor "*" seleciona todos os elementos da página. */
 
 p {
     color: purple;
@@ -19,18 +19,18 @@ No segundo exemplo, é especificado o nivel hierárquico do html:
         <section>
             <h1>
             <p>
-Enquanto no primeiro a tag <p> é selecionada "globalmente".*/
+Enquanto no primeiro a tag <p> é selecionada "globalmente". */
 
 .heading {
     color: green;
-} /* Uma classe é selecionada usando um ponto antes do nome da classe.*/
+} /* Uma classe é selecionada usando um ponto antes do nome da classe. */
 
 .heading p {
     font-style: italic;
     color: yellow
 }
 
-/* Também podemos pegar tags dentro de uma classe ou uma classe dentro de outra classe.*/
+/* Também podemos pegar tags dentro de uma classe ou uma classe dentro de outra classe. */
 
 div {
     color: initial;
@@ -41,4 +41,27 @@ div {
     color: red;
 }
 
-/* Acima foi utilizado o sinal ">" entre duas classes, ele serve para selecionar apenas as classes diretamente abaixo da classe pai. Por exemplo, existe uma classe .pai e duas classes .filha cada uma tendo mais uma classe .filha dentro de si. Sem o sinal todas as qua*/
+/* Acima foi utilizado o sinal ">" entre duas classes, ele serve para selecionar apenas as classes diretamente abaixo da classe pai. Por exemplo, existe uma classe .pai e duas classes .filha cada uma tendo mais uma classe .filha dentro de si. Sem o sinal todas as quatro classes .filha seriam selecionadas ao invés das duas. */
+
+
+.pai p+h1 {
+    color: yellow;
+}
+
+.pai h1+p {
+    color:red;
+}
+
+/* Seleciona um elemento após o que foi especificado. Por exemplo, no primero caso é selecionado uma tag <h1> após uma tag <p> dentro da classe .pai. */
+
+.pai h1~p {
+    color: green;
+}
+
+/* Desta forma, diferente da anterior, seleciona todos os <p> depois da tag <h1>. */
+
+.pai [meu-atributo] {
+    color:red;
+}
+
+/* Seleciona um atributo em especifico, este podendo ser um personalizado ou um do pr*/
