@@ -46,4 +46,66 @@ a:visited {
     color: firebrick;
 } 
 
-/* :visited para deixar um link j*/
+/* :visited para deixar um link já visitado de uma cor especifica. */
+
+a:hover {
+    background: darkslateblue;
+    color: white;
+    text-decoration: none;
+}
+
+a:active {
+    background: darkslategray;
+    color: white;
+    text-decoration: none;
+}
+
+/* :active para fazer algo quando o link estiver sendo clicado. */
+
+input:focus {
+    box-shadow: 0 0 5px rgba(0, 0, 0);
+    outline: none;
+    border: 1px solid black;
+}
+
+/* :focus para dar foco em um campo quando ele estiver ativo. */
+
+input:disabled {
+    background-color: purple;
+    cursor: not-allowed;
+}
+
+.input2:required {
+    background: red;
+}
+
+/* :required serve para selecionar todos os inputs que são requeridos. */
+
+.pai .lista li:first-child {
+    background: red;    
+}
+
+/* :first-child serve para selecionar o primeiro item de uma lista. */
+
+.pai .lista li:last-child{
+    background: blue;
+}
+
+/* :last-child serve para selecionar o ultimo item de uma lista. */ 
+
+p:not(.last) {
+    color: blue;
+}
+
+/* :not() serve para excluir algo, ou seja selecionar tudo menos o que foi especificado dentro do :not(). */
+
+.lista2 li:nth-child() {
+    background-color: rebeccapurple;
+}
+
+/* serve para selecionar irmãos, ou seja, vários itens que tem o mesmo pai. Tem varias formas de ser usado:
+n -> seleciona o índice especificado. 
+odd -> apenas índices ímpares.
+even -> apenas índices pares.
+xn -> funciona como um contador sendo x o número de passos, por exemplo, 3n irá selecionar cada terceiro item.
+xn+y -> o mesmo que o anterior porém com y sendo o ponto de partida, por exemplo, 3n+5 irá selecionar cada terceiro item a partir do item 5.*/
