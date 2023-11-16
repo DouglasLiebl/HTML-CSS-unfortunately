@@ -1,0 +1,34 @@
+ul li::after {
+    content: '->';
+    color: red;
+}
+
+/* ::after adiciona algo depois de algo. */
+
+ul li::before {
+    content: '<-';
+    color: blue;
+}
+
+/* ::before adiciona algo antes de algo. */
+
+p::first-letter {
+    font-size: 80px;
+    display: block;
+    float: left;
+}
+
+/* ::first-letter adiciona algo na primeira letra do item especificado. */
+
+p::first-line {
+    color: rebeccapurple;
+}
+
+/* ::first-line adiciona algo na primeria linha do item especificado. */
+
+p::selection {
+    color: white;
+    background-color: black;
+}
+
+/* ::selection adiciona algo para quando o item s*/

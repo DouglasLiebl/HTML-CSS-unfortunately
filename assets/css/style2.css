@@ -108,4 +108,4 @@ n -> seleciona o índice especificado.
 odd -> apenas índices ímpares.
 even -> apenas índices pares.
 xn -> funciona como um contador sendo x o número de passos, por exemplo, 3n irá selecionar cada terceiro item.
-xn+y -> o mesmo que o anterior porém com y sendo o ponto de partida, por exemplo, 3n+5 irá selecionar cada terceiro item a partir do item 5.*/
+xn+y -> o mesmo que o anterior porém com y sendo o ponto de partida, por exemplo, 3n+5 irá selecionar cada terceiro item a partir do item 5. */
