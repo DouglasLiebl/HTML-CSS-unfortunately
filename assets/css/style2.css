@@ -1,0 +1,49 @@
+[meu-atributo~="valor1"] {
+    color: red;
+}
+
+/* Quando um atributo possui multiplos valores e eu quero selecionar os que tem pelo menos um dos valores utiliza-se "~". */
+
+[meu-atributo^="val"] {
+    color: green;
+}
+
+/* Utiliza-se o "^" para selecionar um valor que começe com o valor passado no seletor. */
+
+[meu-atributo$="or"] {
+    color: blue;
+}
+
+/* Utiliza-se "$" para selecionar um valor que termine com o valor passado no seletor. */
+
+[meu-atributo*="al"] {
+    color: purple;
+}
+
+/* Utiliza-se "*" para selecionar um valor quem contém o valor passado no seletor. */
+
+.heading {
+    transition: all 500ms ease-in-out;
+}
+
+.heading:hover {
+    background: red;
+}
+
+/* :hover serve para fazer algo quando se é passado o mouse na parte especificada. */
+
+a {
+    color: darkorange;
+}
+
+a:link {
+    color: deeppink;
+}
+
+/* :link para deixar um link não visitado de uma cor especifica. */
+
+a:visited {
+    color: firebrick;
+} 
+
+/* :visited para deixar um link j*/
